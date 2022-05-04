@@ -138,7 +138,7 @@ bool syntaxparse_lexRegexLiteral(
 bool syntaxparse_parseRegexLiteral(const char *InputPtr, unsigned *VersionOut,
                                    void *CaptureStructureOut,
                                    unsigned CaptureStructureSize,
-                                   BridgedSourceLoc DiagnosticBaseLoc,
+                                   SourceLoc DiagnosticBaseLoc,
                                    BridgedDiagnosticEngine BridgedDiagEngine) {
   *VersionOut = ~0u;
   return /*hasError*/ false;
